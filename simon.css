@@ -1,12 +1,21 @@
 body{
     text-align: center;
 }
-.btn{
+.btn4{
     height: 200px;
     width: 200px;
     border-radius: 20%;
     border: 10px solid black;
     margin: 2.5rem;
+}
+@media(width<600px){
+    .btn4{
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+        border: 10px solid black;
+        margin: 2.5rem;
+    }
 }
 .button-container{
     display: flex;
@@ -30,4 +39,16 @@ body{
 }
 .userflash{
     background-color: green;
+}
+/* start button */
+.start_button{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    background-color: blue;
+    border-radius: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }

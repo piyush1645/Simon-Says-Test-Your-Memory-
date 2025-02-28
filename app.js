@@ -5,7 +5,8 @@ let btns=["yellow","red","green","purple"];
 
 let started=false;
 let level=0;
-document.addEventListener("keypress",function(){
+let start_button=document.querySelector(".start_button");
+start_button.addEventListener("click",function(){
    if(started==false){
     console.log ("strat");
     started=true;
@@ -43,7 +44,7 @@ function checkAns(idx){
         }
         console.log("same value");
     }else{
-        h2.innerHTML=`Game Over!! Your score was <b>${level}</b> <br>Press any key to start`;
+        h2.innerHTML=`Game Over!! Your score was <b>${level}</b> <br>Press Play button to start`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor="white";
@@ -62,9 +63,9 @@ function btnPress(){
     let idx =level-1;
     checkAns(userSeq.length-1);
 }
-let allbtn=document.querySelectorAll(".btn");
-for (btn of allbtn){
-    btn.addEventListener("click",btnPress);
+let allbtn=document.querySelectorAll(".btn4");
+for (btn4 of allbtn){
+    btn4.addEventListener("click",btnPress);
 }
 
 function reset(){
