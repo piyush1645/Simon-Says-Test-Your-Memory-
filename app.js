@@ -8,6 +8,8 @@ let level=0;
 let start_button=document.querySelector(".start_button");
 start_button.addEventListener("click",function(){
    if(started==false){
+    document.querySelector("body").style.backgroundImage = "url('simon.jpg')";  // Reset the image
+
     console.log ("strat");
     started=true;
     levelup();
@@ -44,11 +46,19 @@ function checkAns(idx){
         }
         console.log("same value");
     }else{
-        h2.innerHTML=`Game Over!! Your score was <b>${level}</b> <br>Press Play button to start`;
-        document.querySelector("body").style.backgroundColor="red";
-        setTimeout(function(){
-            document.querySelector("body").style.backgroundColor="white";
-        },250);
+        // Show Game Over message
+        h2.innerHTML = `Game Over!! Your score was <b>${level}</b> <br>Press Play button to start`;
+        
+        // Remove the background image and apply red color
+        document.querySelector("body").style.backgroundColor = "red";
+        document.querySelector("body").style.backgroundImage = "none";  // Remove background image
+
+        // Flash red and reset the page to white after 250ms
+        setTimeout(function () {
+            document.querySelector("body").style.backgroundColor = "white";
+            document.querySelector("body").style.backgroundImage = "url('over.jpeg')";  // Reset the image
+        }, 250);
+
         reset();
 
     }
