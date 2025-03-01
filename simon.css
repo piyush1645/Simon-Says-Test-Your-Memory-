@@ -9,15 +9,24 @@ body{
     width: 200px;
     border-radius: 20%;
     border: 10px solid black;
-    margin: 2.5rem;
+    margin: 1.5rem;
 }
-@media(width<600px){
+@media(width<700px){
     .btn4{
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
         border-radius: 20%;
         border: 10px solid black;
-        margin: 2.5rem;
+        margin: 1rem;
+    }
+}
+@media(width<295px){
+    .btn4{
+        height: 80px;
+        width: 80px;
+        border-radius: 20%;
+        border: 10px solid black;
+        margin: 0.5rem;
     }
 }
 .button-container{
