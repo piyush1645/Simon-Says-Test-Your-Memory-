@@ -3,7 +3,8 @@ Here’s a sample README file for a Simon Game. This file provides an overview, 
 ---
 
 # Simon Game
-
+![image_alt](https://github.com/piyush1645/Simon-Says-Test-Your-Memory-/blob/a8ed6ee446e4c62aa814d45e736b2caae94e2b04/Screenshot%202025-03-01%20103037.png)
+![image_alt](https://github.com/piyush1645/Simon-Says-Test-Your-Memory-/blob/a8ed6ee446e4c62aa814d45e736b2caae94e2b04/Screenshot%202025-03-01%20103050.png)
 ## Overview
 Simon is a memory and concentration game that challenges players to remember and repeat a series of flashing lights and sounds. The game starts with a simple pattern and progressively adds new steps. The objective is to repeat the sequence correctly. The game ends when the player makes a mistake.
 
