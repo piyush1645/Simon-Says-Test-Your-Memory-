@@ -64,3 +64,17 @@ body{
     padding-right: 30px;
 
 }
+.help_div{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    background-color: rgb(19, 192, 19);
+    border-radius: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

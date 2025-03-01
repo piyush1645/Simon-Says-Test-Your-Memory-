@@ -9,7 +9,7 @@ let start_button=document.querySelector(".start_button");
 start_button.addEventListener("click",function(){
    if(started==false){
     document.querySelector("body").style.backgroundImage = "url('simon.jpg')";  // Reset the image
-
+    document.querySelector("#start_button").style.opacity="0";
     console.log ("strat");
     started=true;
     levelup();
@@ -50,6 +50,8 @@ function checkAns(idx){
         h2.innerHTML = `Game Over!! Your score was <b>${level}</b> <br>Press Play button to start`;
         
         // Remove the background image and apply red color
+         document.querySelector("#start_button").style.opacity="1";
+
         document.querySelector("body").style.backgroundColor = "red";
         document.querySelector("body").style.backgroundImage = "none";  // Remove background image
 
